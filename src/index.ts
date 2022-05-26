@@ -1,11 +1,10 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import path from "path";
-import env from 'dotenv';
-env.config()
+require('dotenv').config();
 
 const app = express();
-const {PORT = 3000} = process.env;
+const {PORT = 3001} = process.env;
 const staticPath = path.join(__dirname, '../ModelData', 'model_data');
 
 app.use(cors());
