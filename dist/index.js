@@ -9,7 +9,7 @@ const path_1 = __importDefault(require("path"));
 require('dotenv').config();
 const app = (0, express_1.default)();
 const { PORT = 3001 } = process.env;
-const staticPath = path_1.default.join(__dirname, '../ModelData_TRAIN', 'model_data');
+const staticPath = path_1.default.join(__dirname, '../ModelData_train', 'model_data');
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use(express_1.default.static(staticPath));
