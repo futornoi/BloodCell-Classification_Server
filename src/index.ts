@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const app = express();
 const {PORT = 3001} = process.env;
-const staticPath = path.join(__dirname, '../ModelData', 'model_data');
+const staticPath = path.join(__dirname, '../ModelData_v3', 'model_data');
 
 app.use(cors());
 app.use(express.json());
